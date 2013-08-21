@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.authors      = { "Matthias Tretter" => "https://github.com/myell0w/", "Thomas Heingaertner" => "https://github.com/kampfgnu/" }
   s.source       = { :git => "https://github.com/NOUSguide/NGTabBarController.git", :tag => '0.0.1' }
   s.source_files = 'NGTabBarController/*.{h,m}'
-  s.frameworks = 'FoundationKit', 'UIKit'
+  s.frameworks = 'Foundation', 'UIKit'
   s.requires_arc = true
   s.platform     = :ios
   s.ios.deployment_target = '4.0'
