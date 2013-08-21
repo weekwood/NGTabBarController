@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/NOUSguide/NGTabBarController"
   s.authors      = { "Matthias Tretter" => "https://github.com/myell0w/", "Thomas Heingaertner" => "https://github.com/kampfgnu/" }  
   s.source       = { :git => "https://github.com/NOUSguide/NGTabBarController.git" }
-  s.source_files = 'NGTabBarController/NGTabBarController/*.{h,m}'
+  s.source_files = 'NGTabBarController/*.{h,m}'
   s.frameworks = 'FoundationKit', 'UIKit'
   s.requires_arc = true
   s.platform     = :ios
