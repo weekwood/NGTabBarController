@@ -11,13 +11,12 @@
 @interface NGTabBarItem : UIControl
 
 @property (nonatomic, strong) UIImage *image;
-@property (nonatomic, strong) UIImage *selectedImage;
 @property (nonatomic, copy) NSString *title;
 
 @property (nonatomic, strong) UIColor *selectedImageTintColor;
 @property (nonatomic, strong) UIColor *titleColor;
 @property (nonatomic, strong) UIColor *selectedTitleColor;
-
+@property (nonatomic, assign) BOOL changeImage;
 + (NGTabBarItem *)itemWithTitle:(NSString *)title image:(UIImage *)image;
 
 - (void)setSize:(CGSize)size;

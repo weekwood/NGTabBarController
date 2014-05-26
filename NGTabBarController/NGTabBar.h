@@ -30,15 +30,14 @@ typedef enum {
 /** defaults to nil */
 @property (nonatomic, strong) UIImage *backgroundImage;
 /** flag whether the semi-transparent item highlight is shown */
-@property (nonatomic, assign) BOOL drawItemHighlight;
-/** flag whether tabbar-gloss should be drawn */
-@property (nonatomic, assign) BOOL drawGloss;
+@property (nonatomic, assign) BOOL showsItemHighlight;
 /** defaults to white */
 @property (nonatomic, strong) UIColor *itemHighlightColor;
 
+@property (nonatomic, strong) UIView *offsetView;
+@property (nonatomic, assign) BOOL showOffsetView;
+@property (nonatomic, assign) CGFloat offsetViewHeight;
 - (void)selectItemAtIndex:(NSUInteger)index;
 - (void)deselectSelectedItem;
-
-- (UIImageView *)imageViewRepresentation;
 
 @end

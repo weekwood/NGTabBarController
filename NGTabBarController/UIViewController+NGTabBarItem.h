@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
 @class NGTabBarItem;
-@class NGTabBarController;
-
 
 @interface UIViewController (NGTabBarItem)
 
 @property (nonatomic, strong, setter = ng_setTabBarItem:) NGTabBarItem *ng_tabBarItem;
-@property (nonatomic, readonly) NGTabBarController *ng_tabBarController;
-
 @end

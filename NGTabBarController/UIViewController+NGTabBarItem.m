@@ -8,7 +8,6 @@
 
 #import "UIViewController+NGTabBarItem.h"
 #import "NGTabBarItem.h"
-#import "NGTabBarController.h"
 #import <objc/runtime.h>
 
 static char itemKey;
@@ -21,10 +20,6 @@ static char itemKey;
 
 - (NGTabBarItem *)ng_tabBarItem {
     return objc_getAssociatedObject(self, &itemKey);
-}
-
-- (NGTabBarController *)ng_tabBarController {
-    return (NGTabBarController *)objc_getAssociatedObject(self, kNGTabBarControllerKey);
 }
 
 @end
